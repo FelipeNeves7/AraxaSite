@@ -1,0 +1,222 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SourceSerif4";
+    src: url(./fonts/SourceSerif4-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --laranja-pub: #D57A53;
+    --fundo-site: #FAFAFA;
+    --fale-conosco: #DFDFDF;
+    --footer: #1A1A1A;
+    --marrom: #6F3F2B;
+}
+
+/* ----------COMEÇANDO CAIXA-PESQUISAR---------- */
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--fundo-site);
+}
+
+.inicio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caixa-pesquisar img {
+    width: 50px;
+}
+
+#person {
+    width: 60px;
+}
+
+.icone {
+    display: flex;
+    gap: 40px
+}
+
+
+.caixa-pesquisar {
+    background-color: #9A9A9A;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+
+.caixa-pesquisar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    flex: 1;
+}
+
+.caixa-pesquisar input::placeholder {
+    color: #CDCDCD;
+}
+
+.icone img {
+
+    border-radius: 60%;
+    padding: 8px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* <----------FAZENDO O MENU----------> */
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 50px;
+}
+
+.menu a {
+    font-size: 25px;
+    color: var(--marrom);
+    font-family: "SourceSerif4", regular;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: #6F3F2B;
+}
+
+
+/* ----------COMEÇANDO CONTEÚDO DO SITE---------- */
+
+#roupas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.shop-now {
+    position: relative;
+}
+
+.shop-now button {
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 600px;
+    padding: 19px 180px;
+
+    color: #FF630C;
+    background-color: #FFFFFF;
+    font-size: 30px;
+    font-family: "SourceSerif4";
+    border: none;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    transition: background-color 500ms
+}
+
+.shop-now button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ----------INICIANDO A COLEÇÃO VERÃO---------- */
+
+#summer25 {
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 117px;
+
+    transition: background-color 500ms;
+}
+
+#summer25 img:hover {
+    transform: scale(1.02);
+
+}
+
+/*----------INICIANDO CARROSEL----------  */
+
+#inverno25 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+
+#inverno25 img {
+    height: 500px;
+    border-radius: 40px;
+}
+
+#meuCarrossel {
+    max-width: 1170px;
+    width: 90%;
+}
+
+/* ----------INICIANDO SOBRE A MARCA---------- */
+
+#sobre img {
+    height: 500px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.titulo h2 {
+    color: var(--laranja-pub);
+    margin-bottom: 0;
+    background-color: #FF630C;
+    border-radius: 20px;
+    padding: 10px 18px;
+}
+
+.titulo p {
+    font-family: "SourceSerif4", regular;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.titulo span{
+    color: var(--branco);
+    border-bottom: solid 3px #FF630C;
+}
