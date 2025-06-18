@@ -17,6 +17,7 @@
     --fundo-site: #FAFAFA;
     --fale-conosco: #DFDFDF;
     --footer: #1A1A1A;
+    --laranja-font: #FF630C;
     --marrom: #6F3F2B;
 }
 
@@ -131,7 +132,7 @@ body {
     left: 600px;
     padding: 19px 180px;
 
-    color: #FF630C;
+    color: var(--laranja-font);
     background-color: #FFFFFF;
     font-size: 30px;
     font-family: "SourceSerif4";
@@ -173,7 +174,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 117px;
     margin-bottom: 120px;
 }
 
@@ -195,16 +196,15 @@ body {
 
 .titulo {
     display: flex;
-    align-items: center;
-    gap: 80px;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    font-family: "SourceSerif4", regular;
+    font-size: 35px;
+    font-weight: 600;
 }
 
 .titulo h2 {
-    color: var(--laranja-pub);
+    color: var(--branco);
     margin-bottom: 0;
-    background-color: #FF630C;
+    background-color: var(--laranja-pub);
     border-radius: 20px;
     padding: 10px 18px;
 }
@@ -216,7 +216,35 @@ body {
     margin-top: 30px;
 }
 
-.titulo span{
-    color: var(--branco);
-    border-bottom: solid 3px #FF630C;
+.titulo span {
+    color: var(--laranja-font);
+    border-bottom: solid 3px var(--marrom);
 }
+
+#sobre {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+#sobre h2 {
+    margin-right: 5px;
+}
+
+#sobre p {
+    justify-content: center;
+    font-family: "SourceSerif4", regular;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.titulo{
+    align-items: center;
+}
+
+
+
