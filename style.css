@@ -249,6 +249,7 @@ body {
 /*----------INICIANDO FORM----------*/
 
 #contato {
+    gap: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,7 +266,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    border: solid 3px var(--marrom);
+    border: solid 3px var(--laranja-pub);
     border-radius: 40px;
     background-color: #CDCDCD;
 
@@ -335,7 +336,7 @@ body {
 
 .campo input:focus,
 .campo-descricao textarea:focus {
-    outline: 2px solid var(--laranja-pub);
+    outline: 2px solid var(--marrom);
 }
 
 #contato form button {
