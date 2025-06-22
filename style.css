@@ -34,7 +34,10 @@ body {
     background-color: var(--fundo-site);
 }
 
+
+
 .inicio {
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -253,6 +256,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 #contato form {
@@ -360,4 +364,101 @@ body {
 
 #contato form button:hover {
     background-color: var(--marrom);
+}
+
+/* ----------INICIANDO FOOTER---------- */
+
+footer {
+    height: 230px;
+    background-image: url(./img/footer.png);
+    margin-top: 100px;
+}
+
+.roda-pe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 230px;
+}
+
+.caixa {
+    margin-left: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.caixa input {
+    padding: 12px 20px;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+    background-color: rgba(205, 205, 205, 0.3);
+    color: #CDCDCD;
+
+    font-family: "SourceSerif4", regular;
+    outline: none;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #CDCDCD;
+}
+
+.caixa button {
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #CDCDCD;
+    color: var(--preto);
+
+    cursor: pointer;
+    font-family: "SourceSerif4", regular;
+    transition: background-color 0.3s;
+}
+
+.caixa button:hover {
+    background-color: var(--branco);
+}
+
+.desconto {
+    display: flex;
+    color: var(--branco);
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.redes-sociais p {
+    color: var(--branco);
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 0px;
+}
+
+.icones-redes svg {
+    width: 40px;
+    height: 40px;
+}
+
+.icones-redes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icones-redes a {
+    color: var(--branco);
+}
+
+.icones-redes a:hover {
+    color: var(--laranja-font);
 }
